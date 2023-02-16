@@ -1,484 +1,7 @@
-//Questions
+//Database
 
-questions=[{
+let questions=[{
     "Id":1,
-    "Question":'Dawn or dusk?',
-    "Options":[{
-        "Answer": "Dawn",
-        "Gryffindor": 27.31307938,
-        "Ravenclaw": 25.92258493,
-        "Hufflepuff": -28.87112887,
-        "Slytherin": -22.21557617
-    },
-    {
-        "Answer": "Dusk",
-        "Gryffindor": -27.07398054,
-        "Ravenclaw": -25.53254608,
-        "Hufflepuff": 30.81085673,
-        "Slytherin": 23.30406316
-    }]
-},
-{
-    "Id":2,
-    "Question":'Forest or river?',
-    "Options":[{
-        "Answer": "Forest",
-        "Gryffindor": 28.81628797,
-        "Ravenclaw": 26.53804988,
-        "Hufflepuff": -29.61546288,
-        "Slytherin": -24.03943097
-    },
-    {
-        "Answer": "River",
-        "Gryffindor": -27.41760127,
-        "Ravenclaw": -25.25110895,
-        "Hufflepuff": 29.47879885,
-        "Slytherin": 25.29708668
-    }]
-},
-{
-    "Id":3,
-    "Question":'Moon or stars?',
-    "Options":[{
-        "Answer": "Moon",
-        "Gryffindor": -26.99015136,
-        "Ravenclaw": 29.21779485,
-        "Hufflepuff": -24.15712033,
-        "Slytherin": 24.38099947
-    },
-    {
-        "Answer": "Stars",
-        "Gryffindor": 28.653864,
-        "Ravenclaw": -28.67894522,
-        "Hufflepuff": 26.97274135,
-        "Slytherin": -24.67312267
-    }]
-},
-{
-    "Id":4,
-    "Question":'Four boxes are placed before you. Which would you try and open?',
-    "Options":[{
-        "Answer": "The small tortoiseshell box, embellished with gold, inside which some small creature seems to be squeaking.",
-        "Gryffindor": -22.52161163,
-        "Ravenclaw": -11.39500098,
-        "Hufflepuff": 46.9276079,
-        "Slytherin": -10.3717712
-    },
-    {
-        "Answer": "The gleaming jet black box with a silver lock and key, marked with a mysterious rune that you know to be the mark of Merlin.",
-        "Gryffindor": -10.90548604,
-        "Ravenclaw": -9.593133701,
-        "Hufflepuff": -16.14193004,
-        "Slytherin": 38.09339906
-    },
-    {
-        "Answer": "The ornate golden casket, standing on clawed feet, whose inscription warns that both secret knowledge and unbearable temptation lie within.",
-        "Gryffindor": -12.21860138,
-        "Ravenclaw": 37.71117418,
-        "Hufflepuff": -10.66015592,
-        "Slytherin": -13.04771215
-    },
-    {
-        "Answer": "The small pewter box, unassuming and plain, with a scratched message upon it that reads ‘I open only for the worthy.’",
-        "Gryffindor": 42.85559784,
-        "Ravenclaw": -13.92739453,
-        "Hufflepuff": -18.49815241,
-        "Slytherin": -7.988791579
-    }]
-},
-{
-    "Id":5,
-    "Question":'You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass. Do you:',
-    "Options":[{
-        "Answer": "Attempt to confuse the troll into letting all three of you pass without fighting?",
-        "Gryffindor": -12.21949559,
-        "Ravenclaw": 39.18673579,
-        "Hufflepuff": -14.32592834,
-        "Slytherin": -10.15802264 
-    },
-    {
-        "Answer": "Suggest drawing lots to decide which of you will fight?",
-        "Gryffindor": -16.77231763,
-        "Ravenclaw": -9.948193394,
-        "Hufflepuff": 45.02575153,
-        "Slytherin": -15.61728574
-    },
-    {
-        "Answer": "Suggest that all three of you should fight (without telling the troll)?",
-        "Gryffindor": -7.926035393,
-        "Ravenclaw": -10.24499201,
-        "Hufflepuff": -15.64058444,
-        "Slytherin": 37.26154927
-    },
-    {
-        "Answer": "Volunteer to fight?",
-        "Gryffindor": 40.38906615,
-        "Ravenclaw": -7.371976409,
-        "Hufflepuff": -20.39648571,
-        "Slytherin": -11.08309843
-    }]
-},
-{
-    "Id":6,
-    "Question":'Once every century, the Flutterby bush produces flowers that adapt their scent to attract the unwary. If it lured you, it would smell of:',
-    "Options":[{
-        "Answer": "A crackling log fire",
-        "Gryffindor": 42.20240168,
-        "Ravenclaw": -8.357753463,
-        "Hufflepuff": -22.78056435,
-        "Slytherin": -8.243194893
-    },
-    {
-        "Answer": "The sea",
-        "Gryffindor": -8.586342901,
-        "Ravenclaw": -7.507111586,
-        "Hufflepuff": -16.19218269,
-        "Slytherin": 35.04330848
-    },
-    {
-        "Answer": "Fresh parchment",
-        "Gryffindor": -12.55006436,
-        "Ravenclaw": 38.93217968,
-        "Hufflepuff": -11.48254915,
-        "Slytherin": -14.14056557
-    },
-    {
-        "Answer": "Home",
-        "Gryffindor": -14.20337805,
-        "Ravenclaw": -16.50952349,
-        "Hufflepuff": 45.40854108,
-        "Slytherin": -13.23654274
-    }]
-},
-{
-    "Id":7,
-    "Question":'One of your house mates has cheated in a Hogwarts exam by using a Self-Spelling Quill. Now he has come top of the class in Charms, beating you into second place. Professor Flitwick is suspicious of what happened. He draws you to one side after his lesson and asks you whether or not your classmate used a forbidden quill. What do you do?',
-    "Options":[{
-        "Answer": "Lie and say you don’t know (but hope that somebody else tells Professor Flitwick the truth).",
-        "Gryffindor": -13.48432155,
-        "Ravenclaw": -17.29439279,
-        "Hufflepuff": 41.3626604,
-        "Slytherin": -8.254486504
-    },
-    {
-        "Answer": "Tell Professor Flitwick that he ought to ask your classmate (and resolve to tell your classmate that if he doesn’t tell the truth, you will).",
-        "Gryffindor": 42.1033363,
-        "Ravenclaw": -13.65683918,
-        "Hufflepuff": -13.49218299,
-        "Slytherin": -12.21474272
-    },
-    {
-        "Answer": "Tell Professor Flitwick the truth. If your classmate is prepared to win by cheating, he deserves to be found out. Also, as you are both in the same house, any points he loses will be regained by you, for coming first in his place.",
-        "Gryffindor": -10.92391358,
-        "Ravenclaw": 38.69530242,
-        "Hufflepuff": -13.4125977,
-        "Slytherin": -12.69153243
-    },
-    {
-        "Answer": "You would not wait to be asked to tell Professor Flitwick the truth. If you knew that somebody was using a forbidden quill, you would tell the teacher before the exam started.",
-        "Gryffindor": -13.12925161,
-        "Ravenclaw": -8.009293327,
-        "Hufflepuff": -13.65120757,
-        "Slytherin": 36.94995767
-    }]
-},
-{
-    "Id":8,
-    "Question":'Which of the following do you find most difficult to deal with?',
-    "Options":[{
-        "Answer": "Hunger",
-        "Gryffindor": -28.21972672,
-        "Ravenclaw": 26.96307844,
-        "Hufflepuff": 31.95072949,
-        "Slytherin": -29.10382335
-    },
-    {
-        "Answer": "Cold",
-        "Gryffindor": -24.05310951,
-        "Ravenclaw": -23.48514187,
-        "Hufflepuff": 27.93543613,
-        "Slytherin": 21.04293859
-    },
-    {
-        "Answer": "Loneliness",
-        "Gryffindor": 29.03349777,
-        "Ravenclaw": -28.05313842,
-        "Hufflepuff": 24.90792029,
-        "Slytherin": -23.82686029
-    },
-    {
-        "Answer": "Boredom",
-        "Gryffindor": 29.94248441,
-        "Ravenclaw": -19.42137955,
-        "Hufflepuff": -35.99363729,
-        "Slytherin": 26.75190709
-    },
-    {
-        "Answer": "Being ignored",
-        "Gryffindor": -26.09709417,
-        "Ravenclaw": 31.63714224,
-        "Hufflepuff": -24.79204017,
-        "Slytherin": 21.68704531
-    }]
-},
-{
-    "Id":9,
-    "Question":'You enter an enchanted garden. What would you be most curious to examine first?',
-    "Options":[{
-        "Answer": "The silver leafed tree bearing golden apples",
-        "Gryffindor": -11.70832774,
-        "Ravenclaw": 38.10156627,
-        "Hufflepuff": -10.47728774,
-        "Slytherin": -14.4066053
-    },
-    {
-        "Answer": "The fat red toadstools that appear to be talking to each other",
-        "Gryffindor": -11.38975609,
-        "Ravenclaw": -19.363342,
-        "Hufflepuff": 45.66505899,
-        "Slytherin": -12.41636611
-    },
-    {
-        "Answer": "The bubbling pool, in the depths of which something luminous is swirling",
-        "Gryffindor": -18.79689945,
-        "Ravenclaw": -8.167283167,
-        "Hufflepuff": -10.95346404,
-        "Slytherin": 39.02161532
-    },
-    {
-        "Answer": "The statue of an old wizard with a strangely twinkling eye",
-        "Gryffindor": 41.23017056,
-        "Ravenclaw": -14.2140387,
-        "Hufflepuff": -17.91308959,
-        "Slytherin": -6.702406531
-    }]
-},
-{
-    "Id":10,
-    "Question":'Four goblets are placed before you. Which would you choose to drink?',
-    "Options":[{
-        "Answer": "The foaming, frothing, silvery liquid that sparkles as though containing ground diamonds.",
-        "Gryffindor": -13.99879538,
-        "Ravenclaw": 40.11098139,
-        "Hufflepuff": -9.406077434,
-        "Slytherin": -15.58163736
-    },
-    {
-        "Answer": "The smooth, thick, richly purple drink that gives off a delicious smell of chocolate and plums.",
-        "Gryffindor": -16.25660413,
-        "Ravenclaw": -14.34614176,
-        "Hufflepuff": 46.3278991,
-        "Slytherin": -14.08038371
-    },
-    {
-        "Answer": "The golden liquid so bright that it hurts the eye, and which makes sunspots dance all around the room.",
-        "Gryffindor": 40.92686336,
-        "Ravenclaw": -11.34270662,
-        "Hufflepuff": -17.29827761,
-        "Slytherin": -10.81718067
-    },
-    {
-        "Answer": "The mysterious black liquid that gleams like ink, and gives off fumes that make you see strange visions.",
-        "Gryffindor": -10.00982635,
-        "Ravenclaw": -11.931032890000001,
-        "Hufflepuff": -11.01834159,
-        "Slytherin": 34.71808527
-    }]
-},
-{
-    "Id":11,
-    "Question":'What kind of instrument most pleases your ear?',
-    "Options":[{
-        "Answer": "The violin",
-        "Gryffindor": -10.33126266,
-        "Ravenclaw": -10.98565505,
-        "Hufflepuff": -12.52911445,
-        "Slytherin": 35.07799069
-    },
-    {
-        "Answer": "The trumpet",
-        "Gryffindor": -14.00827913,
-        "Ravenclaw": -14.41607143,
-        "Hufflepuff": 43.22386173,
-        "Slytherin": -12.52828715
-    },
-    {
-        "Answer": "The piano",
-        "Gryffindor": -12.98508415,
-        "Ravenclaw": 40.30457373,
-        "Hufflepuff": -12.26180667,
-        "Slytherin": -12.91961924
-    },
-    {
-        "Answer": "The drum",
-        "Gryffindor": 44.15185475,
-        "Ravenclaw": -14.48981764,
-        "Hufflepuff": -19.39087512,
-        "Slytherin": -7.911670833
-    }]
-},
-{
-    "Id":12,
-    "Question":'Which of the following would you most hate people to call you?',
-    "Options":[{
-        "Answer": "Ordinary",
-        "Gryffindor": -11.75519742,
-        "Ravenclaw": -10.92370078,
-        "Hufflepuff": -10.86606985,
-        "Slytherin": 35.83478687
-    },
-    {
-        "Answer": "Ignorant",
-        "Gryffindor": -12.60998441,
-        "Ravenclaw": 40.265642,
-        "Hufflepuff": -10.2989145,
-        "Slytherin": -14.55694498
-    },
-    {
-        "Answer": "Cowardly",
-        "Gryffindor": 42.87682039,
-        "Ravenclaw": -15.5525649,
-        "Hufflepuff": -16.60672085,
-        "Slytherin": -9.827956095
-    },
-    {
-        "Answer": "Selfish",
-        "Gryffindor": -15.48432768,
-        "Ravenclaw": -18.0245794,
-        "Hufflepuff": 45.89311983,
-        "Slytherin": -10.87602756
-    }]
-},
-{
-    "Id":13,
-    "Question":'After you have died, what would you most like people to do when they hear your name?',
-    "Options":[{
-        "Answer": "Miss you, but smile",
-        "Gryffindor": -13.7807683,
-        "Ravenclaw": -13.91040329,
-        "Hufflepuff": 46.49760029,
-        "Slytherin": -16.18133969
-    },
-    {
-        "Answer": "Ask for more stories about your adventures",
-        "Gryffindor": 41.37660787,
-        "Ravenclaw": -11.1817536,
-        "Hufflepuff": -21.22463154,
-        "Slytherin": -7.60796961
-    },
-    {
-        "Answer": "Think with admiration of your achievements",
-        "Gryffindor": -10.57625107,
-        "Ravenclaw": 40.25907324,
-        "Hufflepuff": -11.94444904,
-        "Slytherin": -15.29969347
-    },
-    {
-        "Answer": "I don't care what people think of me after I'm dead; it's what they think of me while I'm alive that counts",
-        "Gryffindor": -12.2082282,
-        "Ravenclaw": -9.366492361,
-        "Hufflepuff": -12.77709973,
-        "Slytherin": 36.48253984
-    }]
-},
-{
-    "Id":14,
-    "Question":'How would you like to be known to history?',
-    "Options":[{
-        "Answer": "The Wise",
-        "Gryffindor": -12.39357202,
-        "Ravenclaw": 40.07671351,
-        "Hufflepuff": -12.50534524,
-        "Slytherin": -13.46060562
-    },
-    {
-        "Answer": "The Good",
-        "Gryffindor": -14.87071125,
-        "Ravenclaw": -16.00228703,
-        "Hufflepuff": 43.98568091,
-        "Slytherin": -11.52986338
-    },
-    {
-        "Answer": "The Great",
-        "Gryffindor": -11.48453278,
-        "Ravenclaw": -10.16648232,
-        "Hufflepuff": -15.37467794,
-        "Slytherin": 38.23373882
-    },
-    {
-        "Answer": "The Bold",
-        "Gryffindor": 41.31616697,
-        "Ravenclaw": -14.48335335,
-        "Hufflepuff": -19.24767597,
-        "Slytherin": -5.019035161
-    }]
-},
-{
-    "Id":15,
-    "Question":'A Muggle confronts you and says that they are sure you are a witch or wizard. Do you:',
-    "Options":[{
-        "Answer": "Ask what makes them think so?",
-        "Gryffindor": -18.51698777,
-        "Ravenclaw": 43.19651328,
-        "Hufflepuff": -5.627175508,
-        "Slytherin": -16.24151016
-    },
-    {
-        "Answer": "Agree, and ask whether they’d like a free sample of a jinx?",
-        "Gryffindor": -5.297205391,
-        "Ravenclaw": -17.31138241,
-        "Hufflepuff": -10.74329071,
-        "Slytherin": 35.97599782
-    },
-    {
-        "Answer": "Agree, and walk away, leaving them to wonder whether you are bluffing?",
-        "Gryffindor": 40.41114795,
-        "Ravenclaw": -8.735245784,
-        "Hufflepuff": -18.1847105,
-        "Slytherin": -11.05628226
-    },
-    {
-        "Answer": "Tell them that you are worried about their mental health, and offer to call a doctor.",
-        "Gryffindor": -19.40603566,
-        "Ravenclaw": -12.71912669,
-        "Hufflepuff": 45.08269049,
-        "Slytherin": -11.02696975
-    }]
-},
-{
-    "Id":16,
-    "Question":'Which nightmare would frighten you most?',
-    "Options":[{
-        "Answer": "Standing on top of something very high and realizing suddenly that there are no hand- or footholds, nor any barrier to stop you falling.",
-        "Gryffindor": -16.19003593,
-        "Ravenclaw": 38.81152886,
-        "Hufflepuff": -12.6984308,
-        "Slytherin": -8.023692844
-    },
-    {
-        "Answer": "An eye at the keyhole of the dark, windowless room in which you are locked.",
-        "Gryffindor": 41.33854576,
-        "Ravenclaw": -10.03525098,
-        "Hufflepuff": -15.91229289,
-        "Slytherin": -13.32183833
-    },
-    {
-        "Answer": "Waking up to find that neither your friends nor your family have any idea who you are.",
-        "Gryffindor": -12.96227842,
-        "Ravenclaw": -16.55271609,
-        "Hufflepuff": 45.43418375,
-        "Slytherin": -13.83281749
-    },
-    {
-        "Answer": "Being forced to speak in such a silly voice that hardly anyone can understand you, and everyone laughs at you.",
-        "Gryffindor": -15.94847125,
-        "Ravenclaw": -5.745641099,
-        "Hufflepuff": -14.83832559,
-        "Slytherin": 38.61738702
-    }]
-},
-{
-    "Id":17,
     "Question":'If you were attending Hogwarts, which pet would you choose to take with you?',
     "Options":[
         {
@@ -602,6 +125,483 @@ questions=[{
             ]
         }
     ]
+},
+{
+    "Id":2,
+    "Question":'Dawn or dusk?',
+    "Options":[{
+        "Answer": "Dawn",
+        "Gryffindor": 27.31307938,
+        "Ravenclaw": 25.92258493,
+        "Hufflepuff": -28.87112887,
+        "Slytherin": -22.21557617
+    },
+    {
+        "Answer": "Dusk",
+        "Gryffindor": -27.07398054,
+        "Ravenclaw": -25.53254608,
+        "Hufflepuff": 30.81085673,
+        "Slytherin": 23.30406316
+    }]
+},
+{
+    "Id":3,
+    "Question":'Forest or river?',
+    "Options":[{
+        "Answer": "Forest",
+        "Gryffindor": 28.81628797,
+        "Ravenclaw": 26.53804988,
+        "Hufflepuff": -29.61546288,
+        "Slytherin": -24.03943097
+    },
+    {
+        "Answer": "River",
+        "Gryffindor": -27.41760127,
+        "Ravenclaw": -25.25110895,
+        "Hufflepuff": 29.47879885,
+        "Slytherin": 25.29708668
+    }]
+},
+{
+    "Id":4,
+    "Question":'Moon or stars?',
+    "Options":[{
+        "Answer": "Moon",
+        "Gryffindor": -26.99015136,
+        "Ravenclaw": 29.21779485,
+        "Hufflepuff": -24.15712033,
+        "Slytherin": 24.38099947
+    },
+    {
+        "Answer": "Stars",
+        "Gryffindor": 28.653864,
+        "Ravenclaw": -28.67894522,
+        "Hufflepuff": 26.97274135,
+        "Slytherin": -24.67312267
+    }]
+},
+{
+    "Id":5,
+    "Question":'Four boxes are placed before you. Which would you try and open?',
+    "Options":[{
+        "Answer": "The small tortoiseshell box, embellished with gold, inside which some small creature seems to be squeaking.",
+        "Gryffindor": -22.52161163,
+        "Ravenclaw": -11.39500098,
+        "Hufflepuff": 46.9276079,
+        "Slytherin": -10.3717712
+    },
+    {
+        "Answer": "The gleaming jet black box with a silver lock and key, marked with a mysterious rune that you know to be the mark of Merlin.",
+        "Gryffindor": -10.90548604,
+        "Ravenclaw": -9.593133701,
+        "Hufflepuff": -16.14193004,
+        "Slytherin": 38.09339906
+    },
+    {
+        "Answer": "The ornate golden casket, standing on clawed feet, whose inscription warns that both secret knowledge and unbearable temptation lie within.",
+        "Gryffindor": -12.21860138,
+        "Ravenclaw": 37.71117418,
+        "Hufflepuff": -10.66015592,
+        "Slytherin": -13.04771215
+    },
+    {
+        "Answer": "The small pewter box, unassuming and plain, with a scratched message upon it that reads ‘I open only for the worthy.’",
+        "Gryffindor": 42.85559784,
+        "Ravenclaw": -13.92739453,
+        "Hufflepuff": -18.49815241,
+        "Slytherin": -7.988791579
+    }]
+},
+{
+    "Id":6,
+    "Question":'You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass. Do you:',
+    "Options":[{
+        "Answer": "Attempt to confuse the troll into letting all three of you pass without fighting?",
+        "Gryffindor": -12.21949559,
+        "Ravenclaw": 39.18673579,
+        "Hufflepuff": -14.32592834,
+        "Slytherin": -10.15802264 
+    },
+    {
+        "Answer": "Suggest drawing lots to decide which of you will fight?",
+        "Gryffindor": -16.77231763,
+        "Ravenclaw": -9.948193394,
+        "Hufflepuff": 45.02575153,
+        "Slytherin": -15.61728574
+    },
+    {
+        "Answer": "Suggest that all three of you should fight (without telling the troll)?",
+        "Gryffindor": -7.926035393,
+        "Ravenclaw": -10.24499201,
+        "Hufflepuff": -15.64058444,
+        "Slytherin": 37.26154927
+    },
+    {
+        "Answer": "Volunteer to fight?",
+        "Gryffindor": 40.38906615,
+        "Ravenclaw": -7.371976409,
+        "Hufflepuff": -20.39648571,
+        "Slytherin": -11.08309843
+    }]
+},
+{
+    "Id":7,
+    "Question":'Once every century, the Flutterby bush produces flowers that adapt their scent to attract the unwary. If it lured you, it would smell of:',
+    "Options":[{
+        "Answer": "A crackling log fire",
+        "Gryffindor": 42.20240168,
+        "Ravenclaw": -8.357753463,
+        "Hufflepuff": -22.78056435,
+        "Slytherin": -8.243194893
+    },
+    {
+        "Answer": "The sea",
+        "Gryffindor": -8.586342901,
+        "Ravenclaw": -7.507111586,
+        "Hufflepuff": -16.19218269,
+        "Slytherin": 35.04330848
+    },
+    {
+        "Answer": "Fresh parchment",
+        "Gryffindor": -12.55006436,
+        "Ravenclaw": 38.93217968,
+        "Hufflepuff": -11.48254915,
+        "Slytherin": -14.14056557
+    },
+    {
+        "Answer": "Home",
+        "Gryffindor": -14.20337805,
+        "Ravenclaw": -16.50952349,
+        "Hufflepuff": 45.40854108,
+        "Slytherin": -13.23654274
+    }]
+},
+{
+    "Id":8,
+    "Question":'One of your house mates has cheated in a Hogwarts exam by using a Self-Spelling Quill. Now he has come top of the class in Charms, beating you into second place. Professor Flitwick is suspicious of what happened. He draws you to one side after his lesson and asks you whether or not your classmate used a forbidden quill. What do you do?',
+    "Options":[{
+        "Answer": "Lie and say you don’t know (but hope that somebody else tells Professor Flitwick the truth).",
+        "Gryffindor": -13.48432155,
+        "Ravenclaw": -17.29439279,
+        "Hufflepuff": 41.3626604,
+        "Slytherin": -8.254486504
+    },
+    {
+        "Answer": "Tell Professor Flitwick that he ought to ask your classmate (and resolve to tell your classmate that if he doesn’t tell the truth, you will).",
+        "Gryffindor": 42.1033363,
+        "Ravenclaw": -13.65683918,
+        "Hufflepuff": -13.49218299,
+        "Slytherin": -12.21474272
+    },
+    {
+        "Answer": "Tell Professor Flitwick the truth. If your classmate is prepared to win by cheating, he deserves to be found out. Also, as you are both in the same house, any points he loses will be regained by you, for coming first in his place.",
+        "Gryffindor": -10.92391358,
+        "Ravenclaw": 38.69530242,
+        "Hufflepuff": -13.4125977,
+        "Slytherin": -12.69153243
+    },
+    {
+        "Answer": "You would not wait to be asked to tell Professor Flitwick the truth. If you knew that somebody was using a forbidden quill, you would tell the teacher before the exam started.",
+        "Gryffindor": -13.12925161,
+        "Ravenclaw": -8.009293327,
+        "Hufflepuff": -13.65120757,
+        "Slytherin": 36.94995767
+    }]
+},
+{
+    "Id":9,
+    "Question":'Which of the following do you find most difficult to deal with?',
+    "Options":[{
+        "Answer": "Hunger",
+        "Gryffindor": -28.21972672,
+        "Ravenclaw": 26.96307844,
+        "Hufflepuff": 31.95072949,
+        "Slytherin": -29.10382335
+    },
+    {
+        "Answer": "Cold",
+        "Gryffindor": -24.05310951,
+        "Ravenclaw": -23.48514187,
+        "Hufflepuff": 27.93543613,
+        "Slytherin": 21.04293859
+    },
+    {
+        "Answer": "Loneliness",
+        "Gryffindor": 29.03349777,
+        "Ravenclaw": -28.05313842,
+        "Hufflepuff": 24.90792029,
+        "Slytherin": -23.82686029
+    },
+    {
+        "Answer": "Boredom",
+        "Gryffindor": 29.94248441,
+        "Ravenclaw": -19.42137955,
+        "Hufflepuff": -35.99363729,
+        "Slytherin": 26.75190709
+    },
+    {
+        "Answer": "Being ignored",
+        "Gryffindor": -26.09709417,
+        "Ravenclaw": 31.63714224,
+        "Hufflepuff": -24.79204017,
+        "Slytherin": 21.68704531
+    }]
+},
+{
+    "Id":10,
+    "Question":'You enter an enchanted garden. What would you be most curious to examine first?',
+    "Options":[{
+        "Answer": "The silver leafed tree bearing golden apples",
+        "Gryffindor": -11.70832774,
+        "Ravenclaw": 38.10156627,
+        "Hufflepuff": -10.47728774,
+        "Slytherin": -14.4066053
+    },
+    {
+        "Answer": "The fat red toadstools that appear to be talking to each other",
+        "Gryffindor": -11.38975609,
+        "Ravenclaw": -19.363342,
+        "Hufflepuff": 45.66505899,
+        "Slytherin": -12.41636611
+    },
+    {
+        "Answer": "The bubbling pool, in the depths of which something luminous is swirling",
+        "Gryffindor": -18.79689945,
+        "Ravenclaw": -8.167283167,
+        "Hufflepuff": -10.95346404,
+        "Slytherin": 39.02161532
+    },
+    {
+        "Answer": "The statue of an old wizard with a strangely twinkling eye",
+        "Gryffindor": 41.23017056,
+        "Ravenclaw": -14.2140387,
+        "Hufflepuff": -17.91308959,
+        "Slytherin": -6.702406531
+    }]
+},
+{
+    "Id":11,
+    "Question":'Four goblets are placed before you. Which would you choose to drink?',
+    "Options":[{
+        "Answer": "The foaming, frothing, silvery liquid that sparkles as though containing ground diamonds.",
+        "Gryffindor": -13.99879538,
+        "Ravenclaw": 40.11098139,
+        "Hufflepuff": -9.406077434,
+        "Slytherin": -15.58163736
+    },
+    {
+        "Answer": "The smooth, thick, richly purple drink that gives off a delicious smell of chocolate and plums.",
+        "Gryffindor": -16.25660413,
+        "Ravenclaw": -14.34614176,
+        "Hufflepuff": 46.3278991,
+        "Slytherin": -14.08038371
+    },
+    {
+        "Answer": "The golden liquid so bright that it hurts the eye, and which makes sunspots dance all around the room.",
+        "Gryffindor": 40.92686336,
+        "Ravenclaw": -11.34270662,
+        "Hufflepuff": -17.29827761,
+        "Slytherin": -10.81718067
+    },
+    {
+        "Answer": "The mysterious black liquid that gleams like ink, and gives off fumes that make you see strange visions.",
+        "Gryffindor": -10.00982635,
+        "Ravenclaw": -11.931032890000001,
+        "Hufflepuff": -11.01834159,
+        "Slytherin": 34.71808527
+    }]
+},
+{
+    "Id":12,
+    "Question":'What kind of instrument most pleases your ear?',
+    "Options":[{
+        "Answer": "The violin",
+        "Gryffindor": -10.33126266,
+        "Ravenclaw": -10.98565505,
+        "Hufflepuff": -12.52911445,
+        "Slytherin": 35.07799069
+    },
+    {
+        "Answer": "The trumpet",
+        "Gryffindor": -14.00827913,
+        "Ravenclaw": -14.41607143,
+        "Hufflepuff": 43.22386173,
+        "Slytherin": -12.52828715
+    },
+    {
+        "Answer": "The piano",
+        "Gryffindor": -12.98508415,
+        "Ravenclaw": 40.30457373,
+        "Hufflepuff": -12.26180667,
+        "Slytherin": -12.91961924
+    },
+    {
+        "Answer": "The drum",
+        "Gryffindor": 44.15185475,
+        "Ravenclaw": -14.48981764,
+        "Hufflepuff": -19.39087512,
+        "Slytherin": -7.911670833
+    }]
+},
+{
+    "Id":13,
+    "Question":'Which of the following would you most hate people to call you?',
+    "Options":[{
+        "Answer": "Ordinary",
+        "Gryffindor": -11.75519742,
+        "Ravenclaw": -10.92370078,
+        "Hufflepuff": -10.86606985,
+        "Slytherin": 35.83478687
+    },
+    {
+        "Answer": "Ignorant",
+        "Gryffindor": -12.60998441,
+        "Ravenclaw": 40.265642,
+        "Hufflepuff": -10.2989145,
+        "Slytherin": -14.55694498
+    },
+    {
+        "Answer": "Cowardly",
+        "Gryffindor": 42.87682039,
+        "Ravenclaw": -15.5525649,
+        "Hufflepuff": -16.60672085,
+        "Slytherin": -9.827956095
+    },
+    {
+        "Answer": "Selfish",
+        "Gryffindor": -15.48432768,
+        "Ravenclaw": -18.0245794,
+        "Hufflepuff": 45.89311983,
+        "Slytherin": -10.87602756
+    }]
+},
+{
+    "Id":14,
+    "Question":'After you have died, what would you most like people to do when they hear your name?',
+    "Options":[{
+        "Answer": "Miss you, but smile",
+        "Gryffindor": -13.7807683,
+        "Ravenclaw": -13.91040329,
+        "Hufflepuff": 46.49760029,
+        "Slytherin": -16.18133969
+    },
+    {
+        "Answer": "Ask for more stories about your adventures",
+        "Gryffindor": 41.37660787,
+        "Ravenclaw": -11.1817536,
+        "Hufflepuff": -21.22463154,
+        "Slytherin": -7.60796961
+    },
+    {
+        "Answer": "Think with admiration of your achievements",
+        "Gryffindor": -10.57625107,
+        "Ravenclaw": 40.25907324,
+        "Hufflepuff": -11.94444904,
+        "Slytherin": -15.29969347
+    },
+    {
+        "Answer": "I don't care what people think of me after I'm dead; it's what they think of me while I'm alive that counts",
+        "Gryffindor": -12.2082282,
+        "Ravenclaw": -9.366492361,
+        "Hufflepuff": -12.77709973,
+        "Slytherin": 36.48253984
+    }]
+},
+{
+    "Id":15,
+    "Question":'How would you like to be known to history?',
+    "Options":[{
+        "Answer": "The Wise",
+        "Gryffindor": -12.39357202,
+        "Ravenclaw": 40.07671351,
+        "Hufflepuff": -12.50534524,
+        "Slytherin": -13.46060562
+    },
+    {
+        "Answer": "The Good",
+        "Gryffindor": -14.87071125,
+        "Ravenclaw": -16.00228703,
+        "Hufflepuff": 43.98568091,
+        "Slytherin": -11.52986338
+    },
+    {
+        "Answer": "The Great",
+        "Gryffindor": -11.48453278,
+        "Ravenclaw": -10.16648232,
+        "Hufflepuff": -15.37467794,
+        "Slytherin": 38.23373882
+    },
+    {
+        "Answer": "The Bold",
+        "Gryffindor": 41.31616697,
+        "Ravenclaw": -14.48335335,
+        "Hufflepuff": -19.24767597,
+        "Slytherin": -5.019035161
+    }]
+},
+{
+    "Id":16,
+    "Question":'A Muggle confronts you and says that they are sure you are a witch or wizard. Do you:',
+    "Options":[{
+        "Answer": "Ask what makes them think so?",
+        "Gryffindor": -18.51698777,
+        "Ravenclaw": 43.19651328,
+        "Hufflepuff": -5.627175508,
+        "Slytherin": -16.24151016
+    },
+    {
+        "Answer": "Agree, and ask whether they’d like a free sample of a jinx?",
+        "Gryffindor": -5.297205391,
+        "Ravenclaw": -17.31138241,
+        "Hufflepuff": -10.74329071,
+        "Slytherin": 35.97599782
+    },
+    {
+        "Answer": "Agree, and walk away, leaving them to wonder whether you are bluffing?",
+        "Gryffindor": 40.41114795,
+        "Ravenclaw": -8.735245784,
+        "Hufflepuff": -18.1847105,
+        "Slytherin": -11.05628226
+    },
+    {
+        "Answer": "Tell them that you are worried about their mental health, and offer to call a doctor.",
+        "Gryffindor": -19.40603566,
+        "Ravenclaw": -12.71912669,
+        "Hufflepuff": 45.08269049,
+        "Slytherin": -11.02696975
+    }]
+},
+{
+    "Id":17,
+    "Question":'Which nightmare would frighten you most?',
+    "Options":[{
+        "Answer": "Standing on top of something very high and realizing suddenly that there are no hand- or footholds, nor any barrier to stop you falling.",
+        "Gryffindor": -16.19003593,
+        "Ravenclaw": 38.81152886,
+        "Hufflepuff": -12.6984308,
+        "Slytherin": -8.023692844
+    },
+    {
+        "Answer": "An eye at the keyhole of the dark, windowless room in which you are locked.",
+        "Gryffindor": 41.33854576,
+        "Ravenclaw": -10.03525098,
+        "Hufflepuff": -15.91229289,
+        "Slytherin": -13.32183833
+    },
+    {
+        "Answer": "Waking up to find that neither your friends nor your family have any idea who you are.",
+        "Gryffindor": -12.96227842,
+        "Ravenclaw": -16.55271609,
+        "Hufflepuff": 45.43418375,
+        "Slytherin": -13.83281749
+    },
+    {
+        "Answer": "Being forced to speak in such a silly voice that hardly anyone can understand you, and everyone laughs at you.",
+        "Gryffindor": -15.94847125,
+        "Ravenclaw": -5.745641099,
+        "Hufflepuff": -14.83832559,
+        "Slytherin": 38.61738702
+    }]
 },
 {
     "Id":18,
@@ -998,55 +998,218 @@ questions=[{
     }]
 }]
 
+/**************************************************/
+//variables
+var optionSelected=null
+var gryffindor= 0
+var ravenclaw = 0
+var hufflepuff = 0
+var slytherin = 0
+var questionsSelectedArray=[0]
+var mascotType=null
 
-function sortingHat(){
+//select the questions randomly
+function getRandomSelection(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    result=Math.floor(Math.random() * (max - min + 1) + min);
+    return Math.round(result)
+}
 
-    let gryffindor= 0;
-    let ravenclaw = 0;
-    let hufflepuff = 0;
-    let slytherin = 0;
+//when user start quiz
+function start(){
+    
+    startButton=document.getElementById('startButton')
+    startImage=document.getElementById('start-image')
 
-    for (question in questions){
-        if(questions[question].Id==17){
-            console.log("pregunta de animales")
-        }else{
-            console.log(questions[question].Question);
-            for(let option in questions[question].Options){
-                console.log(questions[question].Options[option].Answer)
-            }
-            let optionSelection = prompt('Ingrese numero de opcion:');
-            gryffindor = gryffindor + questions[question].Options[optionSelection-1].Gryffindor;
-            ravenclaw = ravenclaw + questions[question].Options[optionSelection-1].Ravenclaw;
-            hufflepuff = hufflepuff + questions[question].Options[optionSelection-1].Hufflepuff;
-            slytherin = slytherin + questions[question].Options[optionSelection-1].Slytherin;
-
-            console.log("")
-            console.log(questions[question].Options[optionSelection-1].Answer)
-            console.log("")
-        } 
+    if(startButton!=null || startImage!=null){
+        startButton.style.display='none'
+        startImage.style.display='none'
     }
 
-    maxNumber=Math.max(gryffindor,ravenclaw,hufflepuff,slytherin);
+    questionContainer=document.getElementsByClassName('second-container')
+    
+    //restart values
+    gryffindor= 0
+    ravenclaw = 0
+    hufflepuff = 0
+    slytherin = 0
+    questionsSelectedArray=[0]
+    questionContainer[0].innerHTML=""
+    mascotType=null
+    
+    let i=0
 
-    switch(maxNumber){
-        case gryffindor:
-            resultadoFInal='Gryffindor';
-            break;
-        case ravenclaw:
-            resultadoFInal='Ravenclaw';
-            break;
-        case hufflepuff:
-            resultadoFInal='Hufflepuff';
-            break;
-        case slytherin:
-            resultadoFInal='Slytherin';
-            break;
-        default:
-            resultadoFInal='';
-            break;
+    //select 7 random questions and put it into an array
+    while(i<7){
+        n=getRandomSelection(1,questions.length-1)
+        if(questionsSelectedArray.includes(n)==false){
+            i++
+            questionsSelectedArray.push(n)
+        }
     }
 
-    console.log("Gryffindor: "+gryffindor+" Ravenclaw: "+ ravenclaw+ " Hufflepuff: "+ hufflepuff+ " Slytherin: "+ slytherin)
-    console.log("Eres un: "+resultadoFInal)
+    //first question is always the same one
+    questionContainer[0].innerHTML=`
+        <div classs='question-title'>
+            <h1 class="question-title">${questions[0].Question}</h1>
+        </div>
 
+        <div class='options-container'>
+            <div class="option" onclick='mascotTypeSelected(0)' id='option0'>${questions[0].Options[0].Type}</div>
+            <div class="option" onclick='mascotTypeSelected(1)' id='option1'>${questions[0].Options[1].Type}</div>
+            <div class="option" onclick='mascotTypeSelected(2)' id='option2'>${questions[0].Options[2].Type}</div>
+        </div>
+
+        <div class='button-container'>
+            <button class='select-answer-button' onclick='mascotSelected()'>Select answer</button>
+        </div>
+    `
+}
+
+//first question is divided in categories, this function allow the user to choose the category
+function mascotTypeSelected(answer){
+    options=document.getElementsByClassName("option")
+    Array.prototype.slice.call(options).forEach( element => {
+        element.style.backgroundColor='orange'
+    })
+    document.getElementById(`option${answer}`).style.backgroundColor='red'
+
+    mascotType=answer
+}
+
+//this function shows the options of the choosen category
+function mascotSelected(){
+    
+    if (mascotType!=null){
+        questionContainer[0].innerHTML=`
+        <div classs='question-title'>
+            <h1 class="question-title">${questions[0].Question}</h1>
+        </div>
+
+        <div class='options-container'>
+        </div>
+
+        <div class='button-container'>
+        </div>
+        `
+
+        for (mascot in questions[0].Options[mascotType].Options){
+            let element=document.createElement('div')
+            element.className='option'
+            element.setAttribute('onclick',`selectMascot(${mascot})`)
+            element.id=`option${mascot}`
+            element.innerHTML=`${questions[0].Options[mascotType].Options[mascot].Answer}`
+            document.getElementsByClassName('options-container')[0].appendChild(element)
+        }
+        
+        button=document.createElement('button')
+        button.className='select-answer-button'
+        button.innerHTML='Select answer'
+        document.getElementsByClassName('button-container')[0].appendChild(button)
+    }
+}
+
+//final answer in the first question
+function selectMascot(mascot){
+    options=document.getElementsByClassName("option")
+    Array.prototype.slice.call(options).forEach( element => {
+        element.style.backgroundColor='orange'
+    })
+    document.getElementById(`option${mascot}`).style.backgroundColor='red'
+
+    document.getElementsByClassName('select-answer-button')[0].setAttribute('onclick',`userAnswer(0,${questions[0].Options[mascotType].Options[mascot].Gryffindor},${questions[0].Options[mascotType].Options[mascot].Ravenclaw},${questions[0].Options[mascotType].Options[mascot].Hufflepuff},${questions[0].Options[mascotType].Options[mascot].Slytherin})`)
+}
+
+//function after user choose the answer and wants to continue to the next question
+function userAnswer(question,g,r,h,s){
+
+    if(mascot!=null || optionSelected!=null){
+        gryffindor=gryffindor+g
+        ravenclaw=ravenclaw+r
+        hufflepuff=hufflepuff+h
+        slytherin=slytherin+s
+
+        nextQuestion(question+1)
+    }
+    
+}
+
+//function to pass to next question
+function nextQuestion(question){
+    
+    if(question<questionsSelectedArray.length){
+        questionContainer[0].innerHTML=`
+        <div classs='question-title'>
+            <h1 class="question-title">${questions[questionsSelectedArray[question]].Question}</h1>
+        </div>
+
+        <div class='options-container'>
+        </div>
+
+        <div class='button-container'>
+        </div>
+        `
+
+        for (option in questions[questionsSelectedArray[question]].Options){
+            let element=document.createElement('div')
+            element.className='option'
+            element.setAttribute('onclick',`selectOption(${question},${option})`)
+            element.id=`option${option}`
+            element.innerHTML=`${questions[questionsSelectedArray[question]].Options[option].Answer}`
+            document.getElementsByClassName('options-container')[0].appendChild(element)
+        }
+        
+        button=document.createElement('button')
+        button.className='select-answer-button'
+        button.innerHTML='Select answer'
+        document.getElementsByClassName('button-container')[0].appendChild(button)
+    }else{
+
+        maxNumber=Math.max(gryffindor,ravenclaw,hufflepuff,slytherin);
+
+        switch(maxNumber){
+            case gryffindor:
+                resultadoFinal='Gryffindor';
+                break;
+            case ravenclaw:
+                resultadoFinal='Ravenclaw';
+                break;
+            case hufflepuff:
+                resultadoFinal='Hufflepuff';
+                break;
+            case slytherin:
+                resultadoFinal='Slytherin';
+                break;
+            default:
+                resultadoFinal='';
+                break;
+        }
+
+        questionContainer[0].innerHTML=`
+        <div classs='result-image'>
+            <h1 class="question-title">Imagen</h1>
+        </div>
+
+        <div class='result-title'>
+            <h1>Eres un ${resultadoFinal}</h1>
+        </div>
+
+        <div class='button-container'>
+            <button class='restart-button' onclick='start()'>Try again</button>
+        </div>
+        `
+
+    }
+}
+
+//function everytime the user clicks an option
+function selectOption(question,answer){
+    options=document.getElementsByClassName("option")
+    Array.prototype.slice.call(options).forEach( element => {
+        element.style.backgroundColor='orange'
+    })
+    document.getElementById(`option${answer}`).style.backgroundColor='red'
+
+    document.getElementsByClassName('select-answer-button')[0].setAttribute('onclick',`userAnswer(${question},${questions[questionsSelectedArray[question]].Options[answer].Gryffindor},${questions[questionsSelectedArray[question]].Options[answer].Ravenclaw},${questions[questionsSelectedArray[question]].Options[answer].Hufflepuff},${questions[questionsSelectedArray[question]].Options[answer].Slytherin})`)
 }
