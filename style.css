@@ -6,7 +6,7 @@ html{
 
 body{
     font-family: 'HarryPotter7', sans-serif;
-    background-image: url('./img/stars-background.jpeg');
+   /** background-image: url('./img/stars-background.jpeg');**/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -88,8 +88,45 @@ button:hover{
     height: 15rem;
     margin: 1rem;
 
+    border-radius: 1rem;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .option:hover{
     cursor: pointer;
+}
+
+.optionImage{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 7rem;
+    margin-top:0.5rem;
+    margin: auto;
+}
+
+.optionText{
+    width: 100%;
+    margin: auto;
+}
+
+.result-image-container{
+    width: 100%;
+}
+
+.result-image{
+    height: 15rem;
+    width: 15rem;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.result-title{
+    width: 100%;
 }
