@@ -1051,7 +1051,7 @@ function start(){
 
     //first question is always the same one
     questionContainer[0].innerHTML=`
-        <div classs='question-title'>
+        <div classs='question-title-container'>
             <h1 class="question-title">${questions[0].Question}</h1>
         </div>
 
@@ -1083,7 +1083,7 @@ function mascotSelected(){
     
     if (mascotType!=null){
         questionContainer[0].innerHTML=`
-        <div classs='question-title'>
+        <div classs='question-title-container'>
             <h1 class="question-title">${questions[0].Question}</h1>
         </div>
 
@@ -1140,7 +1140,7 @@ function nextQuestion(question){
     
     if(question<questionsSelectedArray.length){
         questionContainer[0].innerHTML=`
-        <div classs='question-title'>
+        <div classs='question-title-container'>
             <h1 class="question-title">${questions[questionsSelectedArray[question]].Question}</h1>
         </div>
 
