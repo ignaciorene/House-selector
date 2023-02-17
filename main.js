@@ -1145,14 +1145,22 @@ function getRandomSelection(min, max) {
 }
 
 //when user start quiz
-function start(){
+function start(questionsQuantity){
+
+    if(questionsQuantity==0){
+        questionsQuantity=7
+    }else{
+        questionsQuantity=questions.length-1
+    }
     
     startButton=document.getElementById('startButton')
     startImage=document.getElementById('start-image')
 
     if(startButton!=null || startImage!=null){
         startButton.style.display='none'
-        startImage.style.display='none'
+        if(startImage!=null){
+            startImage.style.display='none'
+        }
     }
 
     questionContainer=document.getElementsByClassName('second-container')
@@ -1170,7 +1178,7 @@ function start(){
     let i=0
 
     //select 7 random questions and put it into an array
-    while(i<7){
+    while(i<questionsQuantity){
         n=getRandomSelection(1,questions.length-1)
         if(questionsSelectedArray.includes(n)==false){
             i++
@@ -1360,10 +1368,13 @@ function nextQuestion(question){
         </div>
 
         <div class='button-container'>
-            <button class='restart-button' onclick='start()'>Try again</button>
+        <div class="startButtons-container">
+            <button id='startButton' onclick="start(0)">Normal selection</button>
+            <button id='startButton' onclick="start(1)">All question selection</button>
+        </div>
         </div>
         `
-
+        startButton.style.display='block'
     }
 }
 

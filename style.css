@@ -46,6 +46,12 @@ body{
     background-size:contain;
 }
 
+.startButtons-container{
+    display: flex;
+    width: 25%;
+    margin: auto;
+}
+
 button{
     width: 10rem;
     height: 4rem;
@@ -129,4 +135,10 @@ button:hover{
 
 .result-title{
     width: 100%;
+}
+
+@media (max-width: 600px){
+    .startButtons-container{
+        width: 100%;
+    }
 }
